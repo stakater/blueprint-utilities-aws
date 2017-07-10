@@ -35,3 +35,7 @@ output "zone_id" {
 output "public_domain" {
   value = "${var.public_domain}"
 }
+
+output "name_servers" {
+  value = "${aws_route53_zone.public.name_servers}"
+}
