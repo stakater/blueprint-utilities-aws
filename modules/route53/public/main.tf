@@ -29,7 +29,8 @@
 ###############################################################################
 
 resource "aws_route53_zone" "public" {
-  name = "${var.public_domain}"
+  name          = "${var.public_domain}"
+  force_destroy = "${var.force_destroy}"
 
   tags {
     Name = "${var.public_domain}"

@@ -31,3 +31,7 @@
 variable "public_domain" {
   description = "Public Domain Name"
 }
+
+variable "force_destroy" {
+  default = false
+}
