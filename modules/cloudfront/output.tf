@@ -27,6 +27,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 ###############################################################################
-output "cloudfront-domain-name" {
+output "cloudfront_domain_name" {
   value = "${aws_cloudfront_distribution.cloudfront.domain_name}"
+}
+
+output "hosted_zone_id" {
+  value = "${aws_cloudfront_distribution.cloudfront.hosted_zone_id}"
 }
