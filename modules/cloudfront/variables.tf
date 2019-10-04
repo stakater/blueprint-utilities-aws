@@ -142,3 +142,8 @@ variable "forward-headers" {
     type = "list"
     default = ["Origin"]
 }
+
+variable "ordered_cache_behavior" {
+    type = "map"
+    default = {}
+}
