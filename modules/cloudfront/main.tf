@@ -59,6 +59,8 @@ resource "aws_cloudfront_distribution" "cloudfront"{
 
     }
 
+    ordered_cache_behavior = "${var.ordered_cache_behavior}"
+
     price_class = "${var.price-class}"
 
     restrictions = {
