@@ -144,8 +144,6 @@ variable "forward-headers" {
 }
 
 variable "ordered_cache_behavior" {
-    type = "map"
-    default = {
-        "allowed_methods" = ["GET", "HEAD", "OPTIONS"]
-    }
+    type = "list"
+    default = []
 }
